@@ -5,6 +5,7 @@ import react from "@vitejs/plugin-react"
 
 import { svgSpritePlugin } from "@ct/vite-plugin-svg-sprite"
 import { parcelCSSPlugin } from "@ct/vite-plugin-parcel-css"
+import { staticCompressionPlugin } from "@ct/vite-plugin-static-compress"
 
 const SHARED_SERVER = {
 	port: 3000,
@@ -14,6 +15,11 @@ const SHARED_SERVER = {
 export default defineConfig({
 	server: SHARED_SERVER,
 	preview: SHARED_SERVER,
+	build: {
+		// Handled by reporting the size of chunks & assets.
+		// With the static compression plugin, we get this for free
+		reportCompressedSize: false,
+	},
 	plugins: [
 		react(),
 		svgSpritePlugin({
@@ -203,5 +209,6 @@ export default defineConfig({
 			browserslist: ["IE 11", "safari 13"],
 			minify: true,
 		}),
+		staticCompressionPlugin(),
 	],
 })
