@@ -1,0 +1,23 @@
+{
+	"name": "@ct/on-scroll",
+	"description": "A pub/sub function for listening to scroll without registering duplicate event handlers",
+	"version": "1.0.0",
+	"license": "MIT",
+	"type": "module",
+	"sideEffects": false,
+	"types": "./src/on-scroll.ts",
+	"module": "./src/on-scroll.ts",
+	"exports": {
+		".": {
+			"import": "./src/on-scroll.ts"
+		},
+		"./package.json": "./package.json"
+	},
+	"scripts": {
+		"fmt": "prettier src --write"
+	},
+	"devDependencies": {
+		"typescript": "^4.7.3",
+		"vite": "^3.0.3"
+	}
+}

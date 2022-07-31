@@ -1,0 +1,6 @@
+.svgIcon {
+	touch-action: none;
+	pointer-events: none;
+	height: 100%;
+	width: 100%;
+}

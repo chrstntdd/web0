@@ -1,0 +1,28 @@
+{
+	"name": "grab-bag",
+	"version": "0.0.0",
+	"description": "Reference vite plugins and generic utilities for my needs",
+	"author": "A. N. Other",
+	"license": "MIT",
+	"private": true,
+	"workspaces": [
+		"pkgs/*",
+		"apps/*"
+	],
+	"engines": {
+		"node": ">=18.7.0",
+		"pnpm": ">=7.7.1"
+	},
+	"scripts": {
+		"fmt-all": "pnpm --recursive --parallel fmt",
+		"build-pkgs": "pnpm -F './pkgs/**' build"
+	},
+	"prettier": {
+		"useTabs": true,
+		"trailingComma": "all",
+		"semi": false
+	},
+	"devDependencies": {
+		"prettier": "^2.7.1"
+	}
+}
