@@ -29,5 +29,5 @@ export const appearableItem = style({
 	fontSize: theme.fontSize["4x"],
 	paddingBlock: theme.space["3x"],
 	paddingInline: theme.space["5x"],
-	// transitionDelay: `clamp(0.01s, ${0.025 * i}s, 1s)`,
+	transitionDelay: `clamp(0.01s, calc(0.025s * var(--appear-index)), 1s)`,
 })
