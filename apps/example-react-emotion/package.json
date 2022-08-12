@@ -1,0 +1,35 @@
+{
+	"name": "example-react-emotion",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview",
+		"fmt": "prettier src --write"
+	},
+	"dependencies": {
+		"@emotion/react": "^11.10.0",
+		"polished": "^4.2.2",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-router-dom": "^6.3.0"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.18.10",
+		"@ct/vite-plugin-parcel-css": "workspace:^1.0.0",
+		"@types/node": "^18.7.1",
+		"@types/react": "^18.0.17",
+		"@types/react-dom": "^18.0.6",
+		"@vitejs/plugin-react": "^2.0.1",
+		"typescript": "^4.7.4",
+		"vite": "^3.0.6"
+	},
+	"browserslist": [
+		"> 2%",
+		"not IE <= 11",
+		"not dead",
+		"no op_mini all"
+	]
+}
